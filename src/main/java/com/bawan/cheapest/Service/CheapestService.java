@@ -117,21 +117,21 @@ public class CheapestService{
             ObjectInputStream in = new ObjectInputStream(new FileInputStream(baseUrl + "resultItemInfo"));
             resultItemInfo= (ConcurrentHashMap<String,ChepestItemInfo>)in.readObject();
             in.close();
-            in = new ObjectInputStream(new FileInputStream(baseUrl + "webIdToUrl"));
-            resultItemInfo= (ConcurrentHashMap<String,ChepestItemInfo>)in.readObject();
-            in.close();
-            in = new ObjectInputStream(new FileInputStream(baseUrl + "userSetItem"));
-            resultItemInfo= (ConcurrentHashMap<String,ChepestItemInfo>)in.readObject();
-            in.close();
-            in = new ObjectInputStream(new FileInputStream(baseUrl + "allItemList"));
-            resultItemInfo= (ConcurrentHashMap<String,ChepestItemInfo>)in.readObject();
-            in.close();
-            in = new ObjectInputStream(new FileInputStream(baseUrl + "idToServiceMap"));
-            idToServiceMap= (ConcurrentHashMap<String,ChepestItemInfo>)in.readObject();
-            in.close();
-            in = new ObjectInputStream(new FileInputStream(baseUrl + "defaultItemList"));
-            defaultItemList= (List<String>)in.readObject();
-            in.close();
+         //   in = new ObjectInputStream(new FileInputStream(baseUrl + "webIdToUrl"));
+         //   resultItemInfo= (ConcurrentHashMap<String,ChepestItemInfo>)in.readObject();
+         //   in.close();
+         //   in = new ObjectInputStream(new FileInputStream(baseUrl + "userSetItem"));
+         //   resultItemInfo= (ConcurrentHashMap<String,ChepestItemInfo>)in.readObject();
+         //   in.close();
+         //   in = new ObjectInputStream(new FileInputStream(baseUrl + "allItemList"));
+         //   resultItemInfo= (ConcurrentHashMap<String,ChepestItemInfo>)in.readObject();
+         //   in.close();
+         //   in = new ObjectInputStream(new FileInputStream(baseUrl + "idToServiceMap"));
+         //   idToServiceMap= (ConcurrentHashMap<String,ChepestItemInfo>)in.readObject();
+         //   in.close();
+         //   in = new ObjectInputStream(new FileInputStream(baseUrl + "defaultItemList"));
+         //   defaultItemList= (List<String>)in.readObject();
+         //   in.close();
 
         } catch (Exception e) {
             LOGGER.error("读取配置失败",e);

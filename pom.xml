@@ -16,7 +16,7 @@
         <org.aspectj-version>1.6.10</org.aspectj-version>
         <org.slf4j-version>1.6.6</org.slf4j-version>
         <hibernate.version>4.1.0.Final</hibernate.version>
-        <package.name>bawan</package.name>
+        <package.name>cheapest</package.name>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -280,7 +280,7 @@
     </dependencies>
 
     <build>
-        <finalName>bawan</finalName>
+        <finalName>cheapest</finalName>
 
         <resources>
             <resource>
